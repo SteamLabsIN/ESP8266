@@ -82,7 +82,7 @@ bool getPage() {
   }
   
   // Make an HTTP GET request
-  client.println("GET /index.html HTTP/1.1");
+  client.println("GET /index.html HTTP/1.1"); //if fetching a sub-url replace index.html with the sub-url
   client.print("Host: ");
   client.println(http_site);
   client.println("Connection: close");
